@@ -8,7 +8,7 @@ import 'package:flutter/services.dart';
 import '../flutter_utils.dart' ;
 
 ///برای راحتر تر انجام دادن کارها در برنامه
-mixin Helper {
+mixin FlutterUtilsMixin {
   ///****************************************
   ///String
   ///to persion
