@@ -1,6 +1,6 @@
 name: flutter_utils
 description: "Includes classes or functions in Dart to perform tasks faster in Flutter"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/Alitaheri1374/flutter_utils
 
 environment:
@@ -15,7 +15,7 @@ dependencies:
   shamsi_date: ^1.1.0
   advertising_id: ^2.7.1
   device_info_plus: ^11.4.0
-  package_info_plus: ^8.3.0
+#  package_info_plus: ^8.3.0
 
 dev_dependencies:
   flutter_test:
