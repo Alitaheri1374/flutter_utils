@@ -6,7 +6,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../flutter_utils.dart' ;
-
+// import 'package:advertising_id/advertising_id.dart';
+// import 'package:device_info_plus/device_info_plus.dart';
 // import 'package:package_info_plus/package_info_plus.dart';
 
 ///برای راحتر تر انجام دادن کارها در برنامه
@@ -334,8 +335,8 @@ mixin FlutterUtilsMixin {
 
     // String? chFirebaseToken = await PushNotifications.getToken();
 
-    // PackageInfo packageInfo = await PackageInfo.fromPlatform();
-    // String? chApplicationVersion = packageInfo.version;
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    String? chApplicationVersion = packageInfo.version;
 
     // final deviceInfoPlugin = DeviceInfoPlugin();
     // final deviceInfo = await deviceInfoPlugin.deviceInfo;
@@ -373,8 +374,8 @@ mixin FlutterUtilsMixin {
     object = {
       'chAdID': chAdID,
       // 'chFirebaseToken': null,
-      // 'chApplicationVersion': chApplicationVersion,
-      'chApplicationVersion': 'not set',
+      'chApplicationVersion': chApplicationVersion,
+      // 'chApplicationVersion': 'not set',
       'chDeviceName': chDeviceName,
       'chAndroidVersion': chAndroidVersion,
     };
